@@ -49,7 +49,8 @@ i = 0
 # Known section headers that get special treatment
 SECTION_HEADERS = {
     'ABSTRACT', 'ACKNOWLEDGMENTS', 'REFERENCES', 'HIGHLIGHTS',
-    'FIGURE LEGENDS', 'SUPPLEMENTARY MATERIALS', 'CREDIT AUTHOR STATEMENT'
+    'FIGURE LEGENDS', 'SUPPLEMENTARY MATERIALS', 'CREDIT AUTHOR STATEMENT',
+    'DECLARATION OF GENERATIVE AI USE'
 }
 
 # Track what section we're in for context
@@ -158,6 +159,12 @@ while i < len(lines):
     if line == 'ABSTRACT':
         doc.add_heading('Abstract', level=1)
         current_section = 'ABSTRACT'
+        i += 1
+        continue
+
+    if line == 'DECLARATION OF GENERATIVE AI USE':
+        doc.add_heading('Declaration of Generative AI Use', level=1)
+        current_section = 'AI_DISCLOSURE'
         i += 1
         continue
 

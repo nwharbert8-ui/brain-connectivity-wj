@@ -5,6 +5,8 @@
 **ORCID:** [0009-0007-7740-3616](https://orcid.org/0009-0007-7740-3616)
 **Contact:** Drake@innerarchitecturellc.com
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19006864.svg)](https://doi.org/10.5281/zenodo.19006864)
+
 ## Overview
 
 This repository contains the analysis code for quantifying functional connectivity
@@ -125,4 +127,6 @@ If you use this code, please cite:
 
 Harbert, D.H. (2026). Weighted Jaccard Similarity Analysis Reveals Incomplete Recovery
 of Functional Connectivity Architecture Following Propofol-Induced Unconsciousness.
-*[Journal]*, [volume], [pages]. https://doi.org/[DOI]
+*[Journal]*, [volume], [pages].
+
+Code archive: https://doi.org/10.5281/zenodo.19006864
